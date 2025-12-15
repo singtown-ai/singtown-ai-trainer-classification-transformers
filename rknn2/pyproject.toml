@@ -1,0 +1,26 @@
+[project]
+name = "rknn2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rknn-toolkit2>=2.3.2",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "setuptools>=80.9.0",
+    "singtown-ai==1.9.2",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+torchvision = [
+    { index = "pytorch-cpu" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

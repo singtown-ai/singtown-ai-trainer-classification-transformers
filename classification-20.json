@@ -1,0 +1,102 @@
+[
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.0.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.1.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.2.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.3.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.4.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.5.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.6.jpg",
+        "subset": "TRAIN",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.7.jpg",
+        "subset": "VALID",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.8.jpg",
+        "subset": "VALID",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/cat.9.jpg",
+        "subset": "TEST",
+        "classification": "cat"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.0.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.1.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.2.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.3.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.4.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.5.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.6.jpg",
+        "subset": "TRAIN",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.7.jpg",
+        "subset": "VALID",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.8.jpg",
+        "subset": "VALID",
+        "classification": "dog"
+    },
+    {
+        "url": "https://github.com/singtown-ai/singtown-ai-datasets/raw/main/images/dog.9.jpg",
+        "subset": "TEST",
+        "classification": "dog"
+    }
+]
