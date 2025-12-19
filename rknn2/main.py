@@ -11,7 +11,7 @@ def on_stdout_write(content: str):
 from pathlib import Path
 from rknn.api import RKNN
 import os
-import zipfile
+import tarfile
 import torch
 import random
 
@@ -57,9 +57,9 @@ rknn.release()
 with open(RUN_PATH/"labels.txt", "wb") as f:
     f.write("\n".join(LABELS).encode("utf-8"))
 
-with zipfile.ZipFile(RUN_PATH/"result.zip", "w") as zipf:
-    zipf.write(RUN_PATH/"labels.txt", arcname="labels.txt")
-    zipf.write(RUN_PATH/"best.rknn", arcname="best.rknn")
+with tarfile.open(RUN_PATH/"mobilenet.tar", "w") as zipf:
+    zipf.add(RUN_PATH/"labels.txt", arcname="labels.txt")
+    zipf.add(RUN_PATH/"best.rknn", arcname="mobilenet.rknn")
 
-client.upload_results_zip(RUN_PATH/"result.zip")
+client.upload_results_zip(RUN_PATH/"mobilenet.tar")
 print("Finished")

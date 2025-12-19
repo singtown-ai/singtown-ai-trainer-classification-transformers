@@ -120,7 +120,7 @@ torch.onnx.export(
     input_tensor, 
     RUN_PATH / "best.onnx",
     export_params=True,
-    opset_version=18,
+    opset_version=12,
     do_constant_folding=True,
     input_names=['input'],
     output_names=['output'],
