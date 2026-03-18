@@ -1,5 +1,5 @@
 from singtown_ai import SingTownAIClient
-from singtown_ai import stdout_watcher
+from singtown_ai import stdout_watcher, error_watcher
 from singtown_ai import export_class_folder
 
 client = SingTownAIClient()
@@ -7,6 +7,10 @@ client = SingTownAIClient()
 @stdout_watcher(interval=1)
 def on_stdout_write(content: str):
     client.log(content, end="")
+
+@error_watcher()
+def on_error():
+    client.failed()
 
 from pathlib import Path
 import torch

@@ -1,5 +1,5 @@
 from singtown_ai import SingTownAIClient
-from singtown_ai import stdout_watcher
+from singtown_ai import stdout_watcher, error_watcher
 
 client = SingTownAIClient()
 
@@ -7,6 +7,9 @@ client = SingTownAIClient()
 def on_stdout_write(content: str):
     client.log(content, end="")
 
+@error_watcher()
+def on_error():
+    client.failed()
 
 from pathlib import Path
 from rknn.api import RKNN
@@ -62,4 +65,5 @@ with tarfile.open(RUN_PATH/"mobilenet.tar", "w") as zipf:
     zipf.add(RUN_PATH/"best.rknn", arcname="mobilenet.rknn")
 
 client.upload_results_zip(RUN_PATH/"mobilenet.tar")
+client.success()
 print("Finished")

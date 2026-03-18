@@ -17,7 +17,7 @@ dependencies = [
     "requests==2.28.1",
     "ruamel-yaml==0.17.21",
     "scipy==1.9.3",
-    "singtown-ai==1.9.3",
+    "singtown-ai>=1.10.1",
     "tensorflow==2.8.0",
     "torch==1.13.1",
     "torchvision==0.14.1",
